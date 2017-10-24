@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>组织结构</title>
+		<link rel="stylesheet" type="text/css" href="./jstree.css" />
+		<link rel="stylesheet" href="./web-icons/web-icons.css" />
+		<script src="./jquery.js"></script>
+	</head>
+	<body>
+		<div class="main clearfix row">
+			<div class="roles">
+
+				<div class="buttons"><i class="icon iconfont icon-jia"></i>新增角色</div>
+			</div>
+			<div class="Role-content col-lg-10">
+				<div class="roleheader" style="min-width: 990px;">
+
+				</div>
+				<div class="dataTables">
+					<div class="page-content firstTable" id="user_tables">
+						<table class="table table-bordered table-hover text-nowrap dataTable table-striped margin-vertical-10 width-full print-hidden-first-column print-hidden-last-column" data-selectable="selectable" data-column-defs='[{ "orderable": false, "targets": 0},{ "orderable": false, "targets": 6}]'>
+							<thead>
+								<tr>
+									<th width="20" data-order="false">
+										<span class="checkbox-custom checkbox-success user-select-all">
+											<input type="checkbox" class="user-checkbox selectable-all" name="inputCheckboxes0">
+											<label></label>
+										</span>
+									</th>
+									<th class="name">姓名</th>
+									<th>手机</th>
+									<th>归属</th>
+									<th>角色</th>
+									<th class="time">创建时间</th>
+									<th class="time">负责房源</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table-tr">
+									<td width="20" data-order="false">
+										<span class="checkbox-custom checkbox-success user-select-all">
+				                            <input type="checkbox" class="user-checkbox selectable-all">
+				                            <label></label>
+				                        </span>
+									</td>
+									<td>王乾坤</td>
+									<td>18638201506</td>
+									<td>技术中心</td>
+									<td>产品经理</td>
+									<td>2017/05/06 21:38</td>
+									<td>分配房源</td>
+									<td>
+										<span class='green Edits edit_user'>编辑</span>
+										<span class='green esc del_user'>离职</span>
+										<span class='btn switcherybtn'>
+											<input type='checkbox' class='mySwitchs'>
+										</span>
+									</td>
+								</tr>
+								<tr class="table-tr">
+									<td width="20" data-order="false">
+										<span class="checkbox-custom checkbox-success user-select-all">
+				                            <input type="checkbox" class="user-checkbox selectable-all">
+				                            <label></label>
+				                        </span>
+									</td>
+									<td>王乾坤</td>
+									<td>18638201506</td>
+									<td>技术中心</td>
+									<td>产品经理</td>
+									<td>2017/05/06 21:38</td>
+									<td>分配房源</td>
+									<td>
+										<span class="green Edits">编辑</span>
+										<span class="green esc">离职</span>
+										<span class="btn switcherybtn">
+											<input type="checkbox" checked="checked" class="mySwitchs">
+										</span>
+									</td>
+								</tr>
+								<tr class="table-tr">
+									<td width="20" data-order="false">
+										<span class="checkbox-custom checkbox-success user-select-all">
+				                            <input type="checkbox" disabled value="1" class="user-checkbox selectable-all">
+				                            <label></label>
+				                        </span>
+									</td>
+									<td>王乾坤</td>
+									<td>18638201506</td>
+									<td>技术中心</td>
+									<td>产品经理</td>
+									<td>2017/05/06 21:38</td>
+									<td>分配房源</td>
+									<td>
+										<span class="green Edits">编辑</span>
+										<span class="green esc">离职</span>
+										<span class="btn switcherybtn">
+											<input type="checkbox" checked="checked" class="mySwitchs">
+										</span>
+									</td>
+								</tr>
+								<tr class="table-tr">
+									<td width="20" data-order="false">
+										<span class="checkbox-custom checkbox-success user-select-all">
+				                            <input type="checkbox" class="user-checkbox selectable-all">
+				                            <label></label>
+				                        </span>
+									</td>
+									<td>王乾坤</td>
+									<td>18638201506</td>
+									<td>技术中心</td>
+									<td>产品经理</td>
+									<td>2017/05/06 21:38</td>
+									<td>分配房源</td>
+									<td>
+										<span class="green Edits">编辑</span>
+										<span class="green esc">离职</span>
+										<span class="btn switcherybtn">
+											<input type="checkbox" checked="checked" class="mySwitchs">
+										</span>
+									</td>
+								</tr>
+								<tr class="table-tr">
+									<td width="20" data-order="false">
+										<span class="checkbox-custom checkbox-success user-select-all">
+				                            <input type="checkbox" disabled class="user-checkbox selectable-all">
+				                            <label></label>
+				                        </span>
+									</td>
+									<td>王乾坤</td>
+									<td>18638201506</td>
+									<td>技术中心</td>
+									<td>产品经理</td>
+									<td>2017/05/06 21:38</td>
+									<td>分配房源</td>
+									<td>
+										<span class="green Edits">编辑</span>
+										<span class="green esc">离职</span>
+										<span class="btn switcherybtn">
+											<input type="checkbox" checked="checked" class="mySwitchs">
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./dist/ca.js"></script>
+		<script>
+			$(function() {
+				checkAll({
+					table: 'tbody',
+					CBtn: 'table thead tr th:first input[type="checkbox"]',
+					dC: true,
+					filter: 'disabled'
+				});
+			});
+		</script>
+	</body>
+</html>
