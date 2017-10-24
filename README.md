@@ -1,3 +1,4 @@
+参数:
 table: '.tbody_box .table tbody', // 表单体
 
 CBtn: 'thead>tr>th:first input[type="checkbox"]', // 全选按钮
